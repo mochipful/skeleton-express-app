@@ -18,5 +18,7 @@ function loadEngine(app) {
 }
 
 // @TODO: would we ever want to chain template engines?
+// @TODO: How do we set up the default set of vars for each template?
+// @TODO: Can we log @INFO annotations so they can be removed when this project is repurposed?
 
 module.exports = loadEngine;
