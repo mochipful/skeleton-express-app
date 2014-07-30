@@ -2,7 +2,7 @@
   "name": "skeleton-express-app",
   "version": "0.0.0",
   "description": "Skeleton nodejs express app",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
