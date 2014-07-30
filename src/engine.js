@@ -7,7 +7,7 @@ var viewsDirectory = path.join(__dirname, 'templates');
 
 // @INFO: Figure out a good template engine here: http://garann.github.io/template-chooser/
 // @INFO: See a list of valid consolidate engines here: https://github.com/visionmedia/consolidate.js/#supported-template-engines
-var templateEngine = 'mustache'
+var templateEngine = 'mustache';
 var fileExt = 'must';
 
 function loadEngine(app) {
