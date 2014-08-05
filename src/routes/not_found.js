@@ -4,12 +4,12 @@ var exports = {};
 
 exports.pageNotFoundHandler = function(req, res, next) {
 	var renderOptions = { 
-		'displayText': 'Nothing here.' 
+		'displayText': 'There\'s nothing here.' 
 	};
 
 	res.render('page_not_found.must', renderOptions, function(err, html) {
 		if (err) {
-			next();
+			next(err);
 		}
 
 		res.set({

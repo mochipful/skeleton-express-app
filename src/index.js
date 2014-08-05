@@ -10,9 +10,6 @@ var loadRoutes = require('./routes');
 
 var port = 8080;
 
-// Make all of the files in the /public folder accessible.
-app.use(express.static(path.join(__dirname, 'public')));
-
 // Configures the template engine for the application.
 loadEngine(app);
 
