@@ -3,7 +3,6 @@
 
 var express = require('express');
 var app = express();
-var path = require('path');
 
 var loadEngine = require('./init/engine');
 var loadRoutes = require('./init/routes');
