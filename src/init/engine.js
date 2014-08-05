@@ -3,7 +3,7 @@
 var engines = require('consolidate');
 var path = require('path');
 
-var viewsDirectory = path.join(__dirname, 'templates');
+var viewsDirectory = path.resolve(__dirname, '../templates');
 
 // @INFO: Figure out a good template engine here: http://garann.github.io/template-chooser/
 // @INFO: See a list of valid consolidate engines here: https://github.com/visionmedia/consolidate.js/#supported-template-engines

@@ -3,13 +3,13 @@
 var _ = require('underscore');
 var path = require('path');
 
-var log = require('./logger');
+var log = require('../services/logger');
 
 var PATHS = {};
 var config = {};
 
 // Define some useful paths for th project
-PATHS.ROOT = path.resolve(__dirname,'../');
+PATHS.ROOT = path.resolve(__dirname,'../../');
 PATHS.CONFIG = path.join(PATHS.ROOT, 'config');
 PATHS.TEST = path.join(PATHS.ROOT, 'test');
 PATHS.SRC = path.join(PATHS.ROOT, 'src');

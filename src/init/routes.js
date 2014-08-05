@@ -3,10 +3,12 @@
 var express = require('express');
 var log4js = require('log4js');
 var path = require('path');
-var errorMiddleware = require('./middleware/error_middleware');
 
 var config = require('./config');
-var logger = require('./logger');
+
+var logger = require('../services/logger');
+var errorMiddleware = require('../middleware/error_middleware');
+
 
 function loadRoutes(app) {
 	// Make all of the files in the /public folder accessible.

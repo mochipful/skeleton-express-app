@@ -2,7 +2,7 @@
 
 var _ = require('underscore');
 
-var log = require('../logger');
+var log = require('../services/logger');
 var notFoundRoute = require('../routes/not_found');
 
 var exports = {};
