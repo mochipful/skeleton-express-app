@@ -5,6 +5,7 @@ var log4js = require('log4js');
 var path = require('path');
 var errorMiddleware = require('./middleware/error_middleware');
 
+var config = require('./config');
 var logger = require('./logger');
 
 function loadRoutes(app) {
@@ -29,7 +30,7 @@ function loadRoutes(app) {
 	app.get('*', errorMiddleware.createMiddleware(errorMiddleware.TYPES.NOT_FOUND, 'No route matched.'));
 
 	// The error handler to use for development.
-	if (process.env.NODE_ENV === 'development') { 
+	if (config.environment === 'development') { 
 		app.use(errorMiddleware.errorHandlerDev);
 	}
 
