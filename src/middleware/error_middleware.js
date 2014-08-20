@@ -12,7 +12,7 @@ exports.TYPES = {
 };
 
 exports.createError = function(type, message) {
-	var err; 
+	var err;
 
 	if (!_.contains(_.values(exports.TYPES), type)) {
 		return new Error('Invalid Error Type');

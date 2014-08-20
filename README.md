@@ -27,8 +27,6 @@ Guide to development:
 
 	API Wrappers get added to services/
 
-
-
 e.g. <hostname>/temp.html
 
 Running the app:

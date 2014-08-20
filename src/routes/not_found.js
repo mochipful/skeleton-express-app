@@ -3,8 +3,8 @@
 var exports = {};
 
 exports.pageNotFoundHandler = function(req, res, next) {
-	var renderOptions = { 
-		'displayText': 'There\'s nothing here.' 
+	var renderOptions = {
+		'displayText': 'There\'s nothing here.'
 	};
 
 	res.render('page_not_found.must', renderOptions, function(err, html) {

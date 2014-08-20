@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'development') {
 } else if (process.env.NODE_ENV === 'production') {
 	config = require(path.join(PATHS.CONFIG, 'production'));
 } else {
-	throw new Error('No config available for environment: ' + 
+	throw new Error('No config available for environment: ' +
 		process.env.NODE_ENV);
 }
 

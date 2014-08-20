@@ -25,14 +25,14 @@ function loadRoutes(app) {
 	// Turns off the http header.
 	app.set('x-powered-by', false);
 
-	// By default, '/foo' and '/foo/' 
+	// By default, '/foo' and '/foo/'
 	app.set('strict routing', true);
 
 	// All other routes should return a page not found.
 	app.get('*', errorMiddleware.createMiddleware(errorMiddleware.TYPES.NOT_FOUND, 'No route matched.'));
 
 	// The error handler to use for development.
-	if (config.environment === 'development') { 
+	if (config.environment === 'development') {
 		app.use(errorMiddleware.errorHandlerDev);
 	}
 
